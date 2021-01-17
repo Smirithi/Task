@@ -7,4 +7,3 @@
 
 * Enter credentials "smirithi898@gmail.com" and "Sm1r1th1@098"
 * Click to SignIn
-* Verify landing page after signIn

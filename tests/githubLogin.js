@@ -28,9 +28,9 @@ step("Click to SignIn", async function(){
     await page.click('input[name="commit"]');
 });
 
-step("Verify landing page after signIn", async function() {
-    await page.waitForSelector('div#dashboard-repos-container');
-});
+// step("Verify landing page after signIn", async function() {
+//     await page.waitForSelector('div#dashboard-repos-container');
+// });
 
 afterSuite(async function(){
     browser.close();
