@@ -12,7 +12,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}  
+          node-version: ${{ matrix.node }} 
+      - name: Install gauge
+        run: npm install @getgauge/cli 
       - name: Install Dependencies
         run: npm install
       - name: Test flow
