@@ -1,7 +1,6 @@
 const pptr = require('puppeteer');
 const assert = require('assert');
 const pageObject = require('../pages/loginPage');
-require('dotenv').config();
 
 let page;
 let browser;
@@ -11,8 +10,8 @@ beforeSuite(async function() {
     page = await browser.newPage();
 });
 
-step("Navigate to github login page", async function(){
-    await page.goto(process.env.URL);
+step("Navigate to github login page <url>", async function(url){
+    await page.goto(url);
 });
 
 step("Verify page heading to be <heading>", async function(heading){
@@ -21,9 +20,9 @@ step("Verify page heading to be <heading>", async function(heading){
     assert.strictEqual(pageHeading, heading);
 });
 
-step("Enter user account creadentials", async function() {
-    await page.type(pageObject.emailInput, process.env.EMAIL);
-    await page.type(pageObject.passwordInput, process.env.PASSWORD);
+step("Enter user account creadentials <email> and <password>", async function(email, password) {
+    await page.type(pageObject.emailInput, email);
+    await page.type(pageObject.passwordInput, password);
 });
 
 step("Click to SignIn", async function(){
