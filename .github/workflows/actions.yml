@@ -1,5 +1,5 @@
 name: Simple Login Test
-on: [create, push, status]
+on: [create, push, fork, pull_request]
 jobs:
   Login:
     runs-on: ubuntu-16.04
