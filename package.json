@@ -2,7 +2,7 @@
   "name": "gauge-js-template",
   "description": "Starter template for writing JavaScript tests for Gauge",
   "scripts": {
-    "test": "gauge run specs/"
+    "test": "gauge run specs/github.spec"
   },
   "dependencies": {
     "puppeteer": "^5.5.0"
