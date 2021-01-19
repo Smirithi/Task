@@ -6,7 +6,7 @@ this project requires the `getGauge` and `puppeteer` modules. The assertion is p
 ## Installation
 
 ```
-npm install -g @getgauge@cli
+npm install -g @getgauge/cli
 npm install puppeteer
 ```
 
