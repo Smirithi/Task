@@ -5,5 +5,6 @@
 
 ## SignIn to github account
 
-* Enter user account creadentials "smirithi898@gmail.com" and "Sm1r1th1@098"
+* Enter user account creadentials
 * Click to SignIn
+* Verify landing page after signIn
