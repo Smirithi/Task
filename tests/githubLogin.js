@@ -7,7 +7,7 @@ let page;
 let browser;
 
 beforeSuite(async function() {
-    browser = await pptr.launch({headless:false, slowMo: 50});
+    browser = await pptr.launch({headless:true);
     page = await browser.newPage();
 });
 
