@@ -1,4 +1,4 @@
-name: Simple Login Test
+name: Login Test
 on: [create, push]
 jobs:
   Login:
@@ -6,7 +6,7 @@ jobs:
     strategy:
       matrix:
         node: [14.x]
-    name: Node ${{ matrix.node }} test
+    name: Login to Github acount
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node
@@ -16,6 +16,6 @@ jobs:
       - name: Install gauge
         run: npm install @getgauge/cli 
       - name: Install Dependencies
-        run: npm install
+        run: npm run start
       - name: Test flow
-        run: npm test
+        run: npm run test
