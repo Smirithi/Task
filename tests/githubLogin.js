@@ -22,8 +22,8 @@ step("Verify page heading to be <heading>", async function(heading){
 });
 
 step("Enter user account creadentials", async function() {
-    await page.$eval(pageObject.emailInput, el => el.value = process.env.EMAIL);
-    await page.$eval(pageObject.passwordInput, el => el.value = process.env.PSWD);
+    await page.type(pageObject.emailInput, process.env['EMAIL']);
+    await page.type(pageObject.passwordInput, process.env['PSWD']);
 });
 
 step("Click to SignIn", async function(){
